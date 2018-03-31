@@ -1,8 +1,9 @@
 # Slack Google Image Search
-use a slack slash command to grab the top image from a google image search
+Use a slack slash command to grab the top image from a google image search
 
 # What is this?
 Just a super simple script to use Google CSE to grab the top imgur image returned.
+
 Note: unless you pay google, you'll be limited to 100 returns per day
 
 # Install
@@ -14,10 +15,11 @@ Note: unless you pay google, you'll be limited to 100 returns per day
 
 4. Run Docker image with 
 
-`docker run -d -p 5000:5000 -e API_KEY='$YourGoogleSearchAPIKEY' -e CX_KEY='$CXKey' -e SLACK_TOKEN='$YourSlackSlashCommandTOken' slack-image`
+`docker run -d -p 5000:5000 -e API_KEY='$YourGoogleSearchAPIKEY' -e CX_KEY='$CXKey' -e SLACK_TOKEN='$YourSlackSlashCommandToken' --restart always slack-image`
 
 4. tada!
 
 # Usage
-If your slack slash command is "/image" :
-Get the it's happening .gif by entering: "/image its happening"
+If your slack slash command is `/image` :
+
+Get the it's happening .gif by entering: `/image its happening`
